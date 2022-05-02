@@ -1,0 +1,7 @@
+cypress/*
+out/*
+.next/*
+.husky/*
+.yarn/*
+.pnp*
+.yarnrc.yml
