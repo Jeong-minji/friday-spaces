@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:12.1.5"],\
             ["eslint-config-prettier", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:8.5.0"],\
             ["eslint-plugin-jest-dom", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:4.0.1"],\
-            ["husky", "npm:7.0.4"],\
+            ["husky", "npm:4.3.8"],\
             ["jest", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:28.0.3"],\
             ["jest-environment-jsdom", "npm:28.0.2"],\
             ["lint-staged", "npm:12.4.1"],\
@@ -3378,6 +3378,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ci-info", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/ci-info-npm-2.0.0-78012236a1-3b374666a8.zip/node_modules/ci-info/",\
+          "packageDependencies": [\
+            ["ci-info", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.3.0", {\
           "packageLocation": "./.yarn/cache/ci-info-npm-3.3.0-bc2aaaca96-c3d86fe374.zip/node_modules/ci-info/",\
           "packageDependencies": [\
@@ -3562,6 +3569,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["compare-versions", [\
+        ["npm:3.6.0", {\
+          "packageLocation": "./.yarn/cache/compare-versions-npm-3.6.0-0bb57ed638-7492a50cda.zip/node_modules/compare-versions/",\
+          "packageDependencies": [\
+            ["compare-versions", "npm:3.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["concat-map", [\
         ["npm:0.0.1", {\
           "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-902a9f5d89.zip/node_modules/concat-map/",\
@@ -3613,6 +3629,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cosmiconfig-npm-6.0.0-cb7d64a2b9-8eed7c854b.zip/node_modules/cosmiconfig/",\
           "packageDependencies": [\
             ["cosmiconfig", "npm:6.0.0"],\
+            ["@types/parse-json", "npm:4.0.0"],\
+            ["import-fresh", "npm:3.3.0"],\
+            ["parse-json", "npm:5.2.0"],\
+            ["path-type", "npm:4.0.0"],\
+            ["yaml", "npm:1.10.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.0.1", {\
+          "packageLocation": "./.yarn/cache/cosmiconfig-npm-7.0.1-dd19ae2403-4be63e7117.zip/node_modules/cosmiconfig/",\
+          "packageDependencies": [\
+            ["cosmiconfig", "npm:7.0.1"],\
             ["@types/parse-json", "npm:4.0.0"],\
             ["import-fresh", "npm:3.3.0"],\
             ["parse-json", "npm:5.2.0"],\
@@ -4970,6 +4998,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-exists", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/find-up-npm-5.0.0-e03e9b796d-07955e3573.zip/node_modules/find-up/",\
+          "packageDependencies": [\
+            ["find-up", "npm:5.0.0"],\
+            ["locate-path", "npm:6.0.0"],\
+            ["path-exists", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["find-versions", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/find-versions-npm-4.0.0-e4bd62bace-2b4c749dc3.zip/node_modules/find-versions/",\
+          "packageDependencies": [\
+            ["find-versions", "npm:4.0.0"],\
+            ["semver-regex", "npm:3.1.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["flat-cache", [\
@@ -5050,7 +5097,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:12.1.5"],\
             ["eslint-config-prettier", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:8.5.0"],\
             ["eslint-plugin-jest-dom", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:4.0.1"],\
-            ["husky", "npm:7.0.4"],\
+            ["husky", "npm:4.3.8"],\
             ["jest", "virtual:efd1ebc5a717503ccbd6d3508603b3b1facae95806048bda58fb627d84a63e0b85313516ef14dac14f4d0263fa15a86f2f91b3ff4f2552e84a9cb2f7b52a0f87#npm:28.0.3"],\
             ["jest-environment-jsdom", "npm:28.0.2"],\
             ["lint-staged", "npm:12.4.1"],\
@@ -5521,10 +5568,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["husky", [\
-        ["npm:7.0.4", {\
-          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",\
+        ["npm:4.3.8", {\
+          "packageLocation": "./.yarn/unplugged/husky-npm-4.3.8-f7cd00e56d/node_modules/husky/",\
           "packageDependencies": [\
-            ["husky", "npm:7.0.4"]\
+            ["husky", "npm:4.3.8"],\
+            ["chalk", "npm:4.1.2"],\
+            ["ci-info", "npm:2.0.0"],\
+            ["compare-versions", "npm:3.6.0"],\
+            ["cosmiconfig", "npm:7.0.1"],\
+            ["find-versions", "npm:4.0.0"],\
+            ["opencollective-postinstall", "npm:2.0.3"],\
+            ["pkg-dir", "npm:5.0.0"],\
+            ["please-upgrade-node", "npm:3.2.0"],\
+            ["slash", "npm:3.0.0"],\
+            ["which-pm-runs", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6937,6 +6994,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-locate", "npm:4.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:6.0.0", {\
+          "packageLocation": "./.yarn/cache/locate-path-npm-6.0.0-06a1e4c528-72eb661788.zip/node_modules/locate-path/",\
+          "packageDependencies": [\
+            ["locate-path", "npm:6.0.0"],\
+            ["p-locate", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["lodash", [\
@@ -7555,6 +7620,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["opencollective-postinstall", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/opencollective-postinstall-npm-2.0.3-954643c36b-0a68c5cef1.zip/node_modules/opencollective-postinstall/",\
+          "packageDependencies": [\
+            ["opencollective-postinstall", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["optionator", [\
         ["npm:0.8.3", {\
           "packageLocation": "./.yarn/cache/optionator-npm-0.8.3-bc555bc5b7-b8695ddf3d.zip/node_modules/optionator/",\
@@ -7608,6 +7682,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-try", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/p-limit-npm-3.1.0-05d2ede37f-7c3690c4db.zip/node_modules/p-limit/",\
+          "packageDependencies": [\
+            ["p-limit", "npm:3.1.0"],\
+            ["yocto-queue", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["p-locate", [\
@@ -7624,6 +7706,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["p-locate", "npm:4.1.0"],\
             ["p-limit", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/p-locate-npm-5.0.0-92cc7c7a3e-1623088f36.zip/node_modules/p-locate/",\
+          "packageDependencies": [\
+            ["p-locate", "npm:5.0.0"],\
+            ["p-limit", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7807,6 +7897,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["pkg-dir", "npm:4.2.0"],\
             ["find-up", "npm:4.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.0.0", {\
+          "packageLocation": "./.yarn/cache/pkg-dir-npm-5.0.0-3ba6768b42-b167bb8dac.zip/node_modules/pkg-dir/",\
+          "packageDependencies": [\
+            ["pkg-dir", "npm:5.0.0"],\
+            ["find-up", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["please-upgrade-node", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/please-upgrade-node-npm-3.2.0-3f653350ed-d87c41581a.zip/node_modules/please-upgrade-node/",\
+          "packageDependencies": [\
+            ["please-upgrade-node", "npm:3.2.0"],\
+            ["semver-compare", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8312,6 +8420,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["semver", "npm:7.3.7"],\
             ["lru-cache", "npm:6.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["semver-compare", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/semver-compare-npm-1.0.0-33f7033df0-dd1d7e2909.zip/node_modules/semver-compare/",\
+          "packageDependencies": [\
+            ["semver-compare", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["semver-regex", [\
+        ["npm:3.1.3", {\
+          "packageLocation": "./.yarn/cache/semver-regex-npm-3.1.3-2d32face69-a40c177166.zip/node_modules/semver-regex/",\
+          "packageDependencies": [\
+            ["semver-regex", "npm:3.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9358,6 +9484,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["which-pm-runs", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/which-pm-runs-npm-1.1.0-1a7fd7650e-39a56ee508.zip/node_modules/which-pm-runs/",\
+          "packageDependencies": [\
+            ["which-pm-runs", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["wide-align", [\
         ["npm:1.1.5", {\
           "packageLocation": "./.yarn/cache/wide-align-npm-1.1.5-889d77e592-d5fc37cd56.zip/node_modules/wide-align/",\
@@ -9540,6 +9675,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yn-npm-3.1.1-8ad4259784-2c487b0e14.zip/node_modules/yn/",\
           "packageDependencies": [\
             ["yn", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["yocto-queue", [\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
+          "packageDependencies": [\
+            ["yocto-queue", "npm:0.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
