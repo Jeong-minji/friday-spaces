@@ -3,22 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
     "cypress": "cypress open",
-    "lint-staged": "lint-staged",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*.{tsx,ts,jsx,js}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@emotion/jest": "^11.9.1",
@@ -48,7 +44,7 @@
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest-dom": "^4.0.1",
-    "husky": "4",
+    "husky": "^7.0.0",
     "jest": "^28.0.3",
     "jest-environment-jsdom": "^28.0.2",
     "lint-staged": "^12.4.1",
