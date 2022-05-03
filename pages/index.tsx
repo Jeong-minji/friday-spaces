@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 const Home: NextPage = () => {
+  const { data } = useSession()
+
   return (
     <div>
       <Head>
@@ -20,6 +23,15 @@ const Home: NextPage = () => {
 
       <main>
         <h1>Home Page</h1>
+        {data?.user ? (
+          <button type="button" onClick={() => signOut()}>
+            Github Logout
+          </button>
+        ) : (
+          <button type="button" onClick={() => signIn()}>
+            Github Login
+          </button>
+        )}
       </main>
 
       <footer>
