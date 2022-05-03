@@ -32,12 +32,16 @@ const Home: NextPage = () => {
               }
               username={data.user.name || 'Unnamed'}
             />
-            <button type="button" onClick={() => signOut()}>
+            <button
+              type="button"
+              className="btn-auth"
+              onClick={() => signOut()}
+            >
               Github Logout
             </button>
           </>
         ) : (
-          <button type="button" onClick={() => signIn()}>
+          <button type="button" className="btn-auth" onClick={() => signIn()}>
             Github Login
           </button>
         )}
