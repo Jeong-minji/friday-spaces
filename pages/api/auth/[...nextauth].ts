@@ -33,10 +33,10 @@ export default NextAuth({
       return token
     },
     async session({ session, token }) {
-      const users = token.user as DefaultUser & UserTypes
+      const user = token.user as DefaultUser & UserTypes
       session = {
         ...session,
-        user: users,
+        user,
       }
       return session
     },

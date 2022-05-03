@@ -15,15 +15,15 @@ export interface UserTypes {
   repos_url: string
   received_events_url: string
   type: string
-  site_admin: false
+  site_admin: boolean
   name: string
   company: string
   blog: string
   location: string
   email: string
-  hireable: null
-  bio: null
-  twitter_username: null
+  hireable: string | null
+  bio: string | null
+  twitter_username: string | null
   public_repos: number
   public_gists: number
   followers: number
