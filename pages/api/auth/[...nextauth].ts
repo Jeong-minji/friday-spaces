@@ -1,4 +1,4 @@
-import NextAuth from 'next-auth'
+import NextAuth, { DefaultUser } from 'next-auth'
 import GithubProvider from 'next-auth/providers/github'
 import { UserTypes } from 'types/User'
 
@@ -33,7 +33,7 @@ export default NextAuth({
       return token
     },
     async session({ session, token }) {
-      const users = token.user as UserTypes
+      const users = token.user as DefaultUser & UserTypes
       session = {
         ...session,
         user: users,
