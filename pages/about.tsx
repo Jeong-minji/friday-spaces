@@ -11,6 +11,9 @@ const About: NextPage = () => {
         <Link href="/">
           <a>Home</a>
         </Link>
+        <Link href="/design">
+          <a>Design</a>
+        </Link>
       </nav>
 
       <main>

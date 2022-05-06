@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { Button, Helmet } from 'components'
+import Link from 'next/link'
 import { DesignContainer, DesignContent } from 'styles/content'
 
 const Design = () => {
@@ -9,6 +10,9 @@ const Design = () => {
       <Title>
         디자인 시스템은 좀... 일 키우는 것 같은... 예감이 없지 않아 있는 👻...
       </Title>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
       <DesignContent>
         <Button buttonType="Secondary" buttonColor="yellow_8" label="버튼" />
         <Button buttonType="Secondary" buttonColor="yellow_24" label="버튼" />
@@ -82,5 +86,14 @@ const Title = styled.h1`
   cursor: default;
   &::selection {
     background: transparent;
+  }
+  & + a {
+    display: inline-block;
+    padding: 10px 20px;
+    align-self: center;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
   }
 `
