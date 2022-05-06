@@ -17,7 +17,7 @@ export const globalStyles = (
       html {
         background: #fff;
         height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
         font-size: 10px;
       }
       #__next {
