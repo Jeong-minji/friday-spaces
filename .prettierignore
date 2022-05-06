@@ -4,3 +4,4 @@ out/*
 .yarn/*
 .pnp*
 .yarnrc.yml
+.tsconfig.json
