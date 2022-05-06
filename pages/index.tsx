@@ -13,7 +13,23 @@ const Home: NextPage = () => {
 
       <nav>
         <Link href="/about">
-          <a>About</a>
+          <a
+            style={{ color: '#000', fontSize: '20px', textDecoration: 'none' }}
+          >
+            About
+          </a>
+        </Link>
+        <Link href="/design">
+          <a
+            style={{
+              marginLeft: '10px',
+              color: '#000',
+              fontSize: '20px',
+              textDecoration: 'none',
+            }}
+          >
+            Design
+          </a>
         </Link>
       </nav>
 
