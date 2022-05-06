@@ -26,3 +26,16 @@ export const globalStyles = (
     `}
   />
 )
+
+export const defaultButton = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 43px;
+  margin: 0;
+  background: transparent;
+  border-radius: 8px;
+  appearance: none;
+  cursor: pointer;
+`

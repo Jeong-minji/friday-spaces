@@ -6,6 +6,7 @@ import { Helmet } from 'components'
 
 const Home: NextPage = () => {
   const { data } = useSession()
+
   return (
     <div style={{ height: '100%' }}>
       <Helmet title="Next App Index" description="Index Page" />
