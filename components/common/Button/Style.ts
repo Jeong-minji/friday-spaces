@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { defaultButton } from 'styles/common'
+import { buttonRing, defaultButton } from 'styles/common'
 import { ButtonFontColor } from 'utils/fontColor'
 import { ButtonProps } from './Types'
 
@@ -32,4 +32,11 @@ export const ButtonStyle = styled.button<ButtonStyleTypes>`
     `
     
   `}
+  &:active {
+    ${buttonRing}
+    &::before {
+      border: 2px solid
+        ${({ theme, buttonColor }) => buttonColor && theme.color[buttonColor]};
+    }
+  }
 `

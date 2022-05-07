@@ -32,10 +32,24 @@ export const defaultButton = css`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 10px 43px;
   margin: 0;
   background: transparent;
   border-radius: 8px;
   appearance: none;
   cursor: pointer;
+`
+
+export const buttonRing = css`
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 8px;
+  }
 `
