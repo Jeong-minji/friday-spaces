@@ -1,15 +1,15 @@
-import { render, screen } from '@testing-library/react'
-import Home from 'pages/index'
+import { Navigation } from 'components'
 import { ThemeProvider } from '@emotion/react'
 import theme from 'styles/theme'
+import { render, screen } from '@testing-library/react'
 import { DefaultUser, Session } from 'next-auth'
 import { useSession } from 'next-auth/react'
 import { UserTypes } from 'types/User'
 
 jest.mock('next-auth/react')
 
-describe('Home', () => {
-  it('Should Render Home Page', async () => {
+describe('Navigation', () => {
+  it('Should Navigation Render Success', async () => {
     const mockSession: Session = {
       expires: new Date(Date.now() + 2 * 86400).toISOString(),
       user: {
@@ -23,12 +23,10 @@ describe('Home', () => {
 
     render(
       <ThemeProvider theme={theme}>
-        <Home />
+        <Navigation />
       </ThemeProvider>
     )
-
-    const button = screen.getByRole('button')
-
-    expect(button).toBeInTheDocument()
+    const navigationText = screen.getByTestId(/navigation/i)
+    expect(navigationText).toBeInTheDocument()
   })
 })

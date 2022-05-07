@@ -7,6 +7,9 @@ declare module '@emotion/react' {
     mq: MediaQueryTypes
   }
   export interface ColorTypes {
+    white: string;
+    black: string;
+
     gray_1: string
     gray_2: string
     gray_3: string
