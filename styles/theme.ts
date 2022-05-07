@@ -2,6 +2,8 @@ import { Theme } from '@emotion/react'
 
 const theme: Theme = {
   color: {
+    white: '#fff',
+    black: '#000',
     // Gray Palette
     gray_1: '#F8F8F8',
     gray_2: '#F1F2F3',

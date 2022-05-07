@@ -15,13 +15,13 @@ export const globalStyles = (
         height: 100%;
       }
       html {
-        background: #fff;
         height: 100%;
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 10px;
       }
       #__next {
         height: 100%;
+        background: rgba(78, 115, 248, 0.08);
       }
     `}
   />
