@@ -6,7 +6,11 @@ const Navigation = () => {
   const { data } = useSession()
   return (
     <NavigationStyle data-testid="navigation">
-      <User username={data?.user?.name} thumbnail={data?.user?.avatar_url} />
+      {data ? (
+        <User username={data?.user?.name} thumbnail={data?.user?.avatar_url} />
+      ) : (
+        <p>Not LoggedIn...</p>
+      )}
     </NavigationStyle>
   )
 }

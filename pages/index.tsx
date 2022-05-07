@@ -1,28 +1,34 @@
-import type { NextPage } from 'next'
+import type { GetServerSidePropsContext, NextPage } from 'next'
 import { Helmet } from 'components'
 import { PageStyle } from 'styles/content'
-import { signIn, signOut, useSession } from 'next-auth/react'
+import { getSession, signOut } from 'next-auth/react'
 
 const Home: NextPage = () => {
-  const { data } = useSession()
   return (
     <PageStyle>
       <Helmet title="Next App Index" description="Index Page" />
-      {data ? (
-        <button
-          type="button"
-          data-testid="btn-logout"
-          onClick={() => signOut()}
-        >
-          Logout
-        </button>
-      ) : (
-        <button type="button" data-testid="btn-login" onClick={() => signIn()}>
-          Login
-        </button>
-      )}
+      <button type="button" data-testid="btn-logout" onClick={() => signOut()}>
+        Logout
+      </button>
     </PageStyle>
   )
 }
 
 export default Home
+
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+  const context = await getSession(ctx)
+  if (!context) {
+    return {
+      redirect: {
+        pernament: false,
+        destination: '/signin',
+      },
+    }
+  }
+  return {
+    props: {
+      session: context,
+    },
+  }
+}
